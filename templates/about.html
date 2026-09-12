@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hard Rock — О сервисе</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}">
+</head>
+
+<body>
+<header class="header">
+    <div class="container">
+        <div class="header_line">
+            <div class="header_logo">
+                <img src="{{ url_for('static', filename='img/logo.png') }}" alt="Логотип" class="logo">
+            </div>
+
+            <nav class="nav">
+                <a class="nav_link1" href="{{ url_for('Main') }}">Главная</a>
+                <a class="nav_link2" href="{{ url_for('catalog') }}">Футболки</a>
+                <a class="nav_link3 active" href="{{ url_for('about') }}">О сервисе</a>
+                <a class="nav_link4" href="{{ url_for('contacs') }}">Контакты</a>
+            </nav>
+
+            <div class="card">
+                <a href="#">
+                    <img src="{{ url_for('static', filename='img/card.png') }}" alt="Корзина">
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="about-page">
+    <section class="about-hero">
+        <p class="page-label">HARD ROCK SHOP</p>
+        <h1>О сервисе</h1>
+        <p class="page-subtitle">
+            Интернет-магазин футболок в стиле музыки, городов и рок-культуры.
+        </p>
+    </section>
+
+    <section class="about-box">
+        <div class="about-number">01</div>
+        <div>
+            <h2>Что такое Hard Rock?</h2>
+            <p>
+                Hard Rock — небольшой онлайн-магазин футболок с оригинальными
+                дизайнами. В каталоге собраны модели, посвящённые разным городам
+                и атмосфере рок-музыки.
+            </p>
+            <p>
+                Мы сделали сайт простым и удобным: можно посмотреть каталог,
+                выбрать понравившуюся модель и узнать основную информацию о магазине.
+            </p>
+        </div>
+    </section>
+
+    <section class="facts">
+        <div class="fact">
+            <strong>9+</strong>
+            <span>моделей футболок</span>
+        </div>
+        <div class="fact">
+            <strong>24/7</strong>
+            <span>приём заказов</span>
+        </div>
+        <div class="fact">
+            <strong>2026</strong>
+            <span>год запуска</span>
+        </div>
+    </section>
+
+</main>
+</body>
+</html>

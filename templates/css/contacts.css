@@ -1,0 +1,277 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    min-height: 100%;
+}
+
+body {
+    background: #111;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    color: inherit;
+}
+
+.container {
+    width: min(1200px, calc(100% - 50px));
+    margin: 0 auto;
+}
+
+.header {
+    position: relative;
+    border-bottom: 1px solid #292929;
+    background: #111;
+}
+
+.header_line {
+    min-height: 105px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+}
+
+.header_logo {
+    flex: 0 0 auto;
+}
+
+.logo {
+    display: block;
+    width: 120px;
+    height: auto;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    flex: 1;
+}
+
+.nav a {
+    position: relative;
+    color: #aaa;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .8px;
+    transition: color .2s ease;
+}
+
+.nav a:hover,
+.nav a.active {
+    color: #fff;
+}
+
+.nav a.active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -9px;
+    height: 2px;
+    background: #fff;
+}
+
+.card {
+    flex: 0 0 auto;
+}
+
+.card img {
+    display: block;
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
+
+.contacts-page {
+    width: min(1050px, calc(100% - 50px));
+    margin: 0 auto;
+    padding: 80px 0 70px;
+}
+
+.contacts-hero {
+    max-width: 720px;
+    margin-bottom: 50px;
+}
+
+.page-label {
+    margin: 0 0 16px;
+    color: #777;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.contacts-hero h1,
+.about-hero h1 {
+    margin: 0 0 18px;
+    font-size: clamp(42px, 7vw, 72px);
+    line-height: .95;
+    letter-spacing: -3px;
+}
+
+.page-subtitle {
+    margin: 0;
+    color: #aaa;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.contacts-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.contact-card {
+    min-height: 190px;
+    padding: 28px;
+    display: flex;
+    gap: 20px;
+    border: 1px solid #2b2b2b;
+    background: #171717;
+    transition: transform .2s ease, border-color .2s ease, background .2s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-3px);
+    border-color: #555;
+    background: #1b1b1b;
+}
+
+.contact-main {
+    grid-column: 1 / -1;
+    min-height: 160px;
+}
+
+.card-icon {
+    width: 42px;
+    height: 42px;
+    flex: 0 0 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #444;
+    color: #fff;
+    font-size: 19px;
+}
+
+.card-label {
+    display: block;
+    margin-bottom: 9px;
+    color: #777;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.contact-card h2 {
+    margin: 0 0 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.contact-card p,
+.contact-card a {
+    margin: 0;
+    color: #aaa;
+    font-size: 14px;
+    line-height: 1.7;
+    text-decoration: none;
+}
+
+.contact-card a:hover {
+    color: #fff;
+}
+
+.contact-note {
+    margin-top: 16px;
+    padding: 28px;
+    border-left: 2px solid #fff;
+    background: #171717;
+}
+
+.contact-note h2 {
+    margin: 0 0 8px;
+    font-size: 19px;
+}
+
+.contact-note p {
+    margin: 0;
+    color: #888;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+@media (max-width: 800px) {
+    .header_line {
+        min-height: 90px;
+        gap: 20px;
+    }
+
+    .nav {
+        gap: 16px;
+    }
+
+    .nav a {
+        font-size: 10px;
+    }
+
+    .contacts-content {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-main {
+        grid-column: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .container,
+    .contacts-page {
+        width: min(100% - 30px, 1050px);
+    }
+
+    .header_line {
+        flex-wrap: wrap;
+        padding: 20px 0;
+    }
+
+    .header_logo {
+        order: 1;
+    }
+
+    .card {
+        order: 2;
+    }
+
+    .nav {
+        order: 3;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 14px 20px;
+    }
+
+    .nav a.active::after {
+        bottom: -5px;
+    }
+
+    .contacts-page {
+        padding-top: 55px;
+    }
+
+    .contact-card {
+        padding: 22px;
+    }
+}

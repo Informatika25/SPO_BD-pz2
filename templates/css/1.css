@@ -1,0 +1,538 @@
+
+body {
+     padding: 0;
+     margin: 0;
+     font-family: 'Montserrat', sans-serif;
+     color: rgba(255, 255, 255);
+     font-size: 24px;
+     line-height: 1;
+
+}
+
+*,
+*:before,
+*:after {
+     box-sizing: border-box;
+}
+ul, li{
+     display: block;
+     padding: 0;
+     margin: 0;
+}
+.container{
+     width: 100%;
+     max-width: 1600px;
+     margin-left: 148px; 
+
+
+
+}
+.header{
+     background-color: #000000;
+     height: 915px;
+     background-repeat: no-repeat;
+     background-size: cover;
+     position: absolute;
+     width: 1900px;
+    
+     left: -2px;
+     top: 0px;
+
+}
+
+.header_line{
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     left: 215px;
+     top: 29.5px;
+     position: absolute;
+     
+}
+
+.card{
+     position: absolute;
+     width: 69px;
+     height: 49px;
+     left: 1338px;
+     top: 16.5px;
+
+}
+
+.header-down{
+     margin-left: 150px;
+     
+
+}
+.header-title{
+     font-weight: 700;
+     font-size:50px;
+     color: rgba(255, 255, 255);
+     line-height: 85px;
+
+
+     position: absolute;
+     height: 138px;
+     left: 215px;
+     top: 192px
+
+
+}
+
+
+.header-sbtitle{
+     font-weight: 700;
+     font-size: 24px;
+     color: rgba(255, 255, 255);
+     line-height: 59px;
+
+
+     position: absolute;
+     height: 101px;
+     top: 307px;
+
+
+}
+
+
+
+.nav{
+     font-size: 24px;
+     text-transform: uppercase;
+}
+
+
+
+
+.nav_link1{
+     display: inline-block;
+     vertical-align: top;
+     margin-right: 25px;
+     color: rgb(255 255 255);
+     font-weight: 600;
+     text-decoration: none;
+     transition: color .2s linear;
+     position: relative;
+     position: absolute;
+     width: 223px;
+     left: 415px;
+     position: absolute;
+
+}
+
+.nav_link2{
+     display: inline-block;
+     vertical-align: top;
+     margin-right: 25px;
+     color: rgb(255 255 255);
+     font-weight: 600;
+     text-decoration: none;
+     transition: color .2s linear;
+     position: relative;
+     position: absolute;
+     width: 223px;
+     left: 615px;
+     position: absolute;
+
+}
+
+.nav_link3{
+     display: inline-block;
+     vertical-align: top;
+     margin-right: 25px;
+     color: rgb(255 255 255);
+     font-weight: 600;
+     text-decoration: none;
+     transition: color .2s linear;
+     position: relative;
+     position: absolute;
+     width: 223px;
+
+     left: 815px;
+     position: absolute;
+}
+
+.nav_link4{
+     display: inline-block;
+     vertical-align: top;
+     margin-right: 25px;
+     color: rgb(255 255 255);
+     font-weight: 600;
+     text-decoration: none;
+     transition: color .2s linear;
+
+     position: absolute;
+     width: 123px;
+
+     left: 1015px;
+}
+
+
+
+
+.nav_link:after{
+     content: "";
+     display: block;
+     width: 100%;
+     height: 3px;
+     display: none;
+
+     
+     position: absolute;
+     top: 100%;
+     left: 0;
+     z-index: 1;
+
+}
+
+
+
+.nav_link1:hover {
+     color: rgba(255, 255, 255, 1) ;
+     font-weight: 700;
+     font-size: 24px;
+}
+
+.nav_link2:hover {
+     color: rgba(255, 255, 255, 1) ;
+     font-weight: 700;
+     font-size: 24px;
+}
+
+.nav_link3:hover {
+     color: rgba(255, 255, 255, 1) ;
+     font-weight: 700;
+     font-size: 24px;
+}
+
+.nav_link4:hover {
+     color: rgba(255, 255, 255, 1) ;
+     font-weight: 700;
+     font-size: 24px;
+}
+.header-btn{
+     position: absolute;
+     height: 103px;
+     left: 215px;
+     top: 800px;
+}
+
+.header-button{
+     background: linear-gradient(85.18deg, #8ECDAF -59.99%, #FFFFFF 321.28%);
+     box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+     padding: 37px 23px ;
+     border-radius: 73px;
+     
+
+     color: #FFF;
+     font-weight: 700;
+     font-size: 24px;
+     text-decoration: none;
+
+
+}
+
+.why{
+     width: 1600px;
+     height: 425px;
+     left: 0px;
+     top: 715px;
+     background: #ffffff;
+}
+
+.why-title{
+     margin-top: 120px;
+     font-weight: 700;
+     font-size: 36px;
+     line-height: 44px;
+     color: rgba(10, 9, 9, 1);
+     margin-bottom: 100px ;
+
+     position: absolute;
+     width: 843px;
+     height: 138px;
+     left: 212px;
+     top: 863px;
+;
+
+
+
+}
+
+.why-icons{
+     margin-top: 100px;
+     position: absolute;
+     width: 908px;
+     height: 95px;
+     left: 215px;
+     top: 981px;
+     
+}
+
+
+
+.catalog-title{
+     font-weight: 700;
+     font-size: 36px;
+     line-height: 44px;
+     color: rgba(10, 9, 9, 1);
+
+}
+
+.catalog{
+     background: linear-gradient(171.58deg, #B8CDE8 -41.79%, #F6D1B3 216.64%);
+     height: 100%;
+     background-repeat: no-repeat;
+     background-size: cover;
+     position: absolute;
+     width: 1900px;
+     height: 2000px;
+     left: 0px;
+     top: 1254px;
+
+}
+
+.catalog-title{
+     font-weight: 700;
+     font-size: 36px;
+     line-height: 44px;
+     color: rgba(10, 9, 9, 1);
+     margin-top: 60px;
+     /* margin-left: 148px; */
+     margin-bottom: 1px;
+     /* padding: 100px 100px; */
+     position: absolute;
+     width: 843px;
+     height: 136.39px;
+     left: 212px;
+     top: 1px;
+}
+}
+
+.cards{
+     
+     width: 100%;
+     max-width: 1170px;
+     
+
+}
+
+.catalog-item{
+     max-width: 1170;
+     margin-bottom: 90px;
+}
+
+.crd1{
+     padding-top: 23px;
+     padding-bottom: 23px;
+     background: #FFFFFF;
+     border-radius: 32px;
+     position: absolute;
+     width: 318px;
+     height: 512.96px;
+     left: 210px;
+     top: 207.1px;
+
+}
+
+
+
+.crd2{
+     padding-top: 23px;
+     padding-bottom: 23px;
+     background: #FFFFFF;
+     border-radius: 32px;
+     position: absolute;
+     width: 318px;
+     height: 512.96px;
+     left: 646px;
+     top: 207.1px;
+}
+
+
+
+
+
+
+.crd3{
+     padding-top: 23px;
+     padding-bottom: 23px;
+     background: #FFFFFF;
+     border-radius: 32px;
+     width: 318px;
+     height: 512.96px;
+     left: 1082px;
+     top: 207.1px;
+     position: absolute;
+}
+
+
+
+
+.crd4{
+     padding-top: 23px;
+     padding-bottom: 23px;
+     background: #FFFFFF;
+     border-radius: 32px;
+     width: 318px;
+     height: 512.96px;
+     left: 215px;
+     top: 800px;
+     position: absolute;
+     width: 318px;
+     height: 512.96px;
+     left: 215px;
+
+
+}
+
+
+
+.crd5{
+     padding-top: 23px;
+     padding-bottom: 23px;
+     background: #FFFFFF;
+     border-radius: 32px;
+     top: 800px;
+     position: absolute;
+     width: 318px;
+     height: 512.96px;
+     left: 646px;
+
+}
+
+
+
+
+.crd6{
+     padding-top: 23px;
+     padding-bottom: 23px;
+     background: #FFFFFF;
+     border-radius: 32px;
+     position: absolute;
+     width: 318px;
+     height: 512.96px;
+     left: 1067px;
+     top: 800px;
+
+
+}
+
+
+
+
+.crd7{
+     padding-top: 23px;
+     padding-bottom: 23px;
+     background: #FFFFFF;
+     border-radius: 32px;
+     position: absolute;
+     width: 318px;
+     height: 512.96px;
+     left: 215px;
+     top: 1390px;
+
+}
+
+
+
+
+.crd8{
+     padding-top: 23px;
+     padding-bottom: 23px;
+     background: #FFFFFF;
+     border-radius: 32px;
+     top: 1390px;
+     position: absolute;
+     width: 318px;
+     height: 512.96px;
+     left: 646px;
+
+}
+
+
+
+
+
+.crd9{
+     padding-top: 23px;
+     padding-bottom: 23px;
+     background: #FFFFFF;
+     border-radius: 32px;
+     position: absolute;
+     width: 318px;
+     height: 512.96px;
+     left: 1067px;
+     top: 1390px;
+
+
+}
+
+
+.card-img{
+     display: flex;
+     margin-bottom: 37px;
+     justify-content: center;
+}
+.card-title{
+     display: flex;
+     font-weight: 700;
+     font-size: 20px;
+     line-height: 24px;
+     margin-left: 34px;
+
+     color: #000000;
+}
+
+.card-desc{
+     display: flex;
+     font-weight: 400;
+     font-size: 16px;
+     line-height: 20px;
+     margin-left: 34px;
+
+
+     color: #000000
+}
+
+.card-footer{
+     display: flex;
+     margin-left: 34px;
+}
+
+.product-btn{
+     background: rgba(202, 113, 113, 1);
+     padding: 2px 30px ;
+     border-radius: 24px;
+     border: 0px solid rgba(0, 0, 0, 1);
+     box-shadow: ;
+     
+
+     color: #FFF;
+     font-weight: 400;
+     font-size: 16px;
+     text-decoration: none;
+     margin-left: 41px;
+}
+
+
+.product-price-value{
+     font-weight: 400;
+     font-size: 24px;
+     line-height: 29px;
+}
+
+.product-button{
+     display:flex ;
+     align-items: center;
+     justify-content: space-between;
+}
+
+.que{
+     position: absolute;
+     width: 1900px;
+     height: 604px;
+     left: 0px;
+     top: 2000px;
+     background: #0B0B0B;
+}

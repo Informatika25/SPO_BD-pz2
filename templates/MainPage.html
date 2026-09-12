@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Hard Rock Homepage</title>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="{{ url_for('static', filename = 'css/1.css')}}">
+</head>
+<body>
+     <header class="header">
+          <div class="container">
+               <div class="header_line">
+                    <div class="header_logo"><img src="{{ url_for('static', filename='img/logo.png') }}" alt="Логотип" class="logo"></div>
+                    <nav class="nav">
+                         <a class="nav_link1"  href="#">Главная</a>
+                         <a class="nav_link2" href="{{ url_for('catalog') }}">Футболки</a>
+                         <a class="nav_link3" href="#">О сервисе</a>
+                          <a class="nav_link4" href="{{ url_for('contacs') }}">Контакты</a>
+                    </nav>
+                     <div class="card">
+                           <a href="#">
+                               <img src="{{ url_for('static', filename='img/card.png') }}" alt="">
+                            </a>
+                      </div>
+           </div>
+       </div>
+         <div class="header-down">
+    <div class="container">
+       <div class="header-title">
+              <h1 >Футболки Hard Rock</h1>
+             <div class="header-sbtitle">
+                 <h2 >Онлайн-магазин футболок Hard Rock<br>
+                 Подарит тебе лучшую футболку<br>
+                 За несколько кликов</h2>
+                </div>
+              </div>
+           <div class="header-btn">
+                  <a href="{{ url_for('catalog') }}" class="header-button">Посмотреть все футболки</a>
+          </div>
+      </div>   
+   </div>
+    </header>
+
+</div>  
+<div class="why">
+     <div class="container">
+     <div class="why-title">
+          Почему выбирают наши футболки
+     </div>
+     <div class="why-icons">
+          <img src="{{ url_for('static', filename='img/icons.png') }}" alt="">
+
+
+     </div>
+     </div>
+
+          
+    
+
+
+
+
+     </div>
+</div> 
+<div class="catalog">
+     <div class="container">
+          <div class="catalog-title">
+               Каталог футболок
+
+          
+          </div>
+     <div class="cards">
+          <div class="container">
+               <div class="catalog-item">
+                    <div class="crd1">
+                         <div class="card-img">
+                              <img class = 'card_img' src="{{ url_for('static', filename='img/img1.png') }}" alt="">
+
+                    </div>
+                    <div class="product-content">
+                         <div class="card-title">
+                              Moscow (white)
+                         </div>
+                         <div class="card-desc">
+                              Лучшая футболка<br> для прогулок с друзьями<br> и для ношения дома<br> <br> <br>
+                         </div>
+                         <footer class="card-footer">
+                              <div class="product-button">
+                                   <div class="product-price">
+                                        <span class="product-price-value">1900</span>
+                                        <span class="product-currency">&#8381;</span>
+                                   </div>
+                                   <button class="btn product-btn" type="button">Купить</button>
+
+                              </div>
+                         </div>
+                    </footer>
+               </div>
+          </div>
+     </div>
+
+
+<div class="cards">
+     <div class="container">
+          <div class="catalog-item">
+               <div class="crd2">
+                    <div class="card-img">
+
+<img class = 'card_img' src="{{ url_for('static', filename='img/img2.png') }}" alt="">
+
+               </div>
+               <div class="product-content">
+                    <div class="card-title">
+                         Moscow (Russia)
+                    </div>
+                    <div class="card-desc">
+                         Лучшая футболка<br> для прогулок с друзьями<br> и для ношения дома<br> <br> <br>
+                    </div>
+                    <footer class="card-footer">
+                         <div class="product-button">
+                              <div class="product-price">
+                                   <span class="product-price-value">3100</span>
+                                   <span class="product-currency">&#8381;</span>
+                              </div>
+                              <button class="btn product-btn" type="button">Купить</button>
+
+                         </div>
+                    </div>
+               </footer>
+          </div>
+     </div>
+</div>
+
+<div class="cards">
+     <div class="container">
+          <div class="catalog-item">
+               <div class="crd3">
+                    <div class="card-img">
+                         <img class = 'card_img' src="{{ url_for('static', filename='img/img3.png') }}" alt="">
+
+               </div>
+               <div class="product-content">
+                    <div class="card-title">
+                         Moscow (grey)
+                    </div>
+                    <div class="card-desc">
+                         Лучшая футболка<br> для прогулок с друзьями<br> и для ношения дома<br> <br> <br>
+                    </div>
+                    <footer class="card-footer">
+                         <div class="product-button">
+                              <div class="product-price">
+                                   <span class="product-price-value">1800</span>
+                                   <span class="product-currency">&#8381;</span>
+                              </div>
+                              <button class="btn product-btn" type="button">Купить</button>
+
+                         </div>
+                    </div>
+               </footer>
+          </div>
+     </div>
+</div>
+
+
+
+<div class="cards">
+     <div class="container">
+          <div class="catalog-item">
+               <div class="crd4">
+                    <div class="card-img">
+                         <img class = 'card_img' src="{{ url_for('static', filename='img/img4.png') }}" alt="">
+
+               </div>
+               <div class="product-content">
+                    <div class="card-title">
+                         USA (blue)
+                    </div>
+                    <div class="card-desc">
+                         Лучшая футболка<br> для прогулок с друзьями<br> и для ношения дома<br> <br> <br>
+                    </div>
+                    <footer class="card-footer">
+                         <div class="product-button">
+                              <div class="product-price">
+                                   <span class="product-price-value">2500</span>
+                                   <span class="product-currency">&#8381;</span>
+                              </div>
+                              <button class="btn product-btn" type="button">Купить</button>
+
+                         </div>
+                    </div>
+               </footer>
+          </div>
+     </div>
+</div>
+
+
+
+<div class="cards">
+     <div class="container">
+          <div class="catalog-item">
+               <div class="crd5">
+                    <div class="card-img">
+                         <img class = 'card_img' src="{{ url_for('static', filename='img/img5.png') }}" alt="">
+
+               </div>
+               <div class="product-content">
+                    <div class="card-title">
+                         New York (blue)
+                    </div>
+                    <div class="card-desc">
+
+Лучшая футболка<br> для прогулок с друзьями<br> и для ношения дома<br> <br> <br>
+                    </div>
+                    <footer class="card-footer">
+                         <div class="product-button">
+                              <div class="product-price">
+                                   <span class="product-price-value">2300</span>
+                                   <span class="product-currency">&#8381;</span>
+                                   </div>
+                              <button class="btn product-btn" type="button">Купить</button>
+
+                         </div>
+                    </div>
+               </footer>
+          </div>
+     </div>
+</div>
+</div>
+
+
+
+<div class="cards">
+     <div class="container">
+          <div class="catalog-item">
+               <div class="crd6">
+                    <div class="card-img">
+                         <img class = 'card_img' src="{{ url_for('static', filename='img/img6.png') }}" alt="">
+
+               </div>
+               <div class="product-content">
+                    <div class="card-title">
+                         New York (Light)
+                    </div>
+                    <div class="card-desc">
+                         Лучшая футболка<br> для прогулок с друзьями<br> и для ношения дома<br> <br> <br>
+                    </div>
+                    <footer class="card-footer">
+                         <div class="product-button">
+                              <div class="product-price">
+                                   <span class="product-price-value">2000</span>
+                                   <span class="product-currency">&#8381;</span>
+                              </div>
+                              <button class="btn product-btn" type="button">Купить</button>
+
+                         </div>
+                    </div>
+               </footer>
+          </div>
+     </div>
+</div>
+
+
+<div class="cards">
+     <div class="container">
+          <div class="catalog-item">
+               <div class="crd7">
+                    <div class="card-img">
+                         <img class = 'card_img' src="{{ url_for('static', filename='img/img7.png') }}" alt="">
+
+               </div>
+               <div class="product-content">
+                    <div class="card-title">
+                         Berlin (grey)
+                    </div>
+                    <div class="card-desc">
+                         Лучшая футболка<br> для прогулок с друзьями<br> и для ношения дома<br> <br> <br>
+                    </div>
+                    <footer class="card-footer">
+                         <div class="product-button">
+                              <div class="product-price">
+                                   <span class="product-price-value">1900</span>
+                                   <span class="product-currency">&#8381;</span>
+                              </div>
+                              <button class="btn product-btn" type="button">Купить</button>
+
+                         </div>
+                    </div>
+               </footer>
+          </div>
+     </div>
+</div>
+
+
+
+
+<div class="cards">
+     <div class="container">
+          <div class="catalog-item">
+               <div class="crd8">
+                    <div class="card-img">
+                         <img class = 'card_img' src="{{ url_for('static', filename='img/img8.png') }}" alt="">
+
+               </div>
+               <div class="product-content">
+                    <div class="card-title">
+                         Berlin (dark)
+                    </div>
+                    <div class="card-desc">
+                         Лучшая футболка<br> для прогулок с друзьями<br> и для ношения дома<br> <br> <br>
+                    </div>
+                    <footer class="card-footer">
+                         <div class="product-button">
+                              <div class="product-price">
+
+<span class="product-price-value">2100</span>
+                                   <span class="product-currency">&#8381;</span>
+                              </div>
+                              <button class="btn product-btn" type="button">Купить</button>
+
+                         </div>
+                    </div>
+               </footer>
+          </div>
+     </div>
+</div>
+
+
+
+
+
+<div class="cards">
+     <div class="container">
+          <div class="catalog-item">
+               <div class="crd9">
+                    <div class="card-img">
+                         <img class = 'card_img' src="{{ url_for('static', filename='img/img9.png') }}" alt="">
+
+               </div>
+               <div class="product-content">
+                    <div class="card-title">
+                         Lisbon (white)
+                    </div>
+                    <div class="card-desc">
+                         Лучшая футболка<br> для прогулок с друзьями<br> и для ношения дома<br> <br> <br>
+                    </div>
+                    <footer class="card-footer">
+                         <div class="product-button">
+                              <div class="product-price">
+                                   <span class="product-price-value">2900</span>
+                                   <span class="product-currency">&#8381;</span>
+                              </div>
+                              <button class="btn product-btn" type="button">Купить</button>
+
+                         </div>
+                    </div>
+               </footer>
+          </div>
+     </div>
+</div>   
+
+
+<div class="que">
+     <div class="container">
+          
+     
+     
+
+
+
+     </div>
+</div>      
+
+
+
+
+
+
+</body>
+</html>

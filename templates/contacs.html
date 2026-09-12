@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hard Rock — Контакты</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/contacts.css') }}">
+</head>
+
+<body>
+<header class="header">
+    <div class="container">
+        <div class="header_line">
+            <div class="header_logo">
+                <img src="{{ url_for('static', filename='img/logo.png') }}" alt="Логотип" class="logo">
+            </div>
+
+            <nav class="nav">
+                <a class="nav_link1" href="{{ url_for('Main') }}">Главная</a>
+                <a class="nav_link2" href="{{ url_for('catalog') }}">Футболки</a>
+                <a class="nav_link3" href="{{ url_for('about') }}">О сервисе</a>
+                <a class="nav_link4 active" href="{{ url_for('contacs') }}">Контакты</a>
+            </nav>
+
+            <div class="card">
+                <a href="#">
+                    <img src="{{ url_for('static', filename='img/card.png') }}" alt="Корзина">
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="contacts-page">
+    <section class="contacts-hero">
+        <p class="page-label">HARD ROCK SHOP</p>
+        <h1>Контакты</h1>
+        <p class="page-subtitle">
+            Если у вас есть вопрос по футболкам, заказу или доставке —
+            свяжитесь с нами удобным способом.
+        </p>
+    </section>
+
+    <section class="contacts-content">
+        <div class="contact-card contact-main">
+            <div class="card-icon">📍</div>
+            <div>
+                <span class="card-label">Адрес</span>
+                <h2>Наш магазин</h2>
+                <p>г. Москва, ул. Рок-н-Ролла, д. 1</p>
+            </div>
+        </div>
+
+        <div class="contact-card">
+            <div class="card-icon">☎</div>
+            <div>
+                <span class="card-label">Телефон</span>
+                <h2>Позвонить нам</h2>
+                <a href="tel:+74951234567">+7 (495) 123-45-67</a>
+            </div>
+        </div>
+
+        <div class="contact-card">
+            <div class="card-icon">✉</div>
+            <div>
+                <span class="card-label">E-mail</span>
+                <h2>Написать нам</h2>
+                <a href="mailto:info@hardrock-shop.ru">info@hardrock-shop.ru</a>
+            </div>
+        </div>
+
+        <div class="contact-card">
+            <div class="card-icon">◷</div>
+            <div>
+                <span class="card-label">Режим работы</span>
+                <h2>Когда мы на связи</h2>
+                <p>Пн–Пт: 09:00–20:00<br>Сб–Вс: 10:00–18:00</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-note">
+        <h2>Есть вопрос?</h2>
+        <p>Напишите нам — мы постараемся ответить как можно быстрее.</p>
+    </section>
+</main>
+</body>
+</html>
